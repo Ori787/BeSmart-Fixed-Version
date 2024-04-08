@@ -1,0 +1,18 @@
+POST  http://localhost:8080/users/
+Content-Type: application/json
+
+{
+  "name": {
+    "first": "ronel",
+    "last": "snow"
+  },
+  "email": "ronsno111@yahoo.com",
+  "phone": "0512350383",
+  "image": {
+    "alt": "profile-pic",
+    "url": "https://picsum.photos/200/300"
+  },
+  "password": "sean333",
+  "isBusiness": true,
+  "isAdmin": true
+}

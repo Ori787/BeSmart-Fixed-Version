@@ -1,0 +1,9 @@
+//disclaimer: I'm aware this is a very bad practice to store sensitive information in an accessible file.
+// I made it only for testing purpose as the api key is only good for 20 minutes.
+
+POST https://test.api.amadeus.com/v1/security/oauth2/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=client_credentials&client_id=Vnrfvp4jVQ1SWRMznbtvRMwsxlACv8j3&client_secret=Dx7MCQljkRavFAf8
+
+
