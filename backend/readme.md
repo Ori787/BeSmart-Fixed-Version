@@ -12,9 +12,7 @@ Moreover, I use this back-end to authorize and authenticate users in my app.
 
 to run the server, you must run the following commands in your terminal:
 
-cd Back-End
-
-cd BeSmart-Backend
+cd backend
 
 npm i
 
