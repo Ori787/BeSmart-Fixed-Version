@@ -6,6 +6,8 @@ all of this happens thanks to interfacing with a third party's api named 'Amadeu
 
 First of all, let's start with all the commands you must run in your terminal:
 
+- cd frontend
+
 - npm i
 
 - npm start
