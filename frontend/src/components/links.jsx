@@ -1,5 +1,5 @@
 import { loggedInLinks, loggedOutLinks } from "../myLinks";
-import NavLinkComponent from "./NavLink";
+import NavLinkComponent from "./nav-link";
 import { useSelector } from "react-redux";
 import { Box } from "@mui/material";
 import nextKey from "generate-my-key"

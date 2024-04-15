@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import DestinationCard from "./destinationCard";
+import DestinationCard from "./destination-card";
 import Grid from '@mui/material/Grid';
 
 

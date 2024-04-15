@@ -6,7 +6,13 @@ import Router from './Routes/Router';
 import { useState, useEffect } from 'react';
 import useAutoLogin from './hooks/useAutoLogin';
 import { LinearProgress } from "@mui/material";
+import {
+  QueryClient,
+  QueryClientProvider,
+} from '@tanstack/react-query';
 
+
+const queryClient = new QueryClient();
 
 const App = () => {
   const [doneAuth, setDoneAuth] = useState(false);
@@ -14,7 +20,7 @@ const App = () => {
   useEffect(() => {
     (async () => {
       try {
-        await autoLogin(); 
+        await autoLogin();
       } catch (err) {
         console.log(err);
       } finally {
@@ -23,12 +29,14 @@ const App = () => {
     })();
   }, [autoLogin]);
   return (
-     <div className="App">
-    <BrowserRouter>
-<LayoutComp>
-{doneAuth ? <Router /> : <LinearProgress />}
-</LayoutComp>
-</BrowserRouter>
+    <div className="App">
+      <QueryClientProvider client={queryClient}>
+        <BrowserRouter>
+          <LayoutComp>
+            {doneAuth ? <Router /> : <LinearProgress />}
+          </LayoutComp>
+        </BrowserRouter>
+      </QueryClientProvider>
     </div>
   );
 }
